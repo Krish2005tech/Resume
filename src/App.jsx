@@ -18,7 +18,7 @@ export default function Portfolio() {
   };
 
  const skills = [
-  "C++", "Python", "JavaScript", "Golang", "SQL",
+  "C/C++", "Python", "JavaScript", "Golang", "SQL",
   "React", "Node.js", "Flask", "FastAPI", "Django",
   "MongoDB", "Redis", "Docker", "Kubernetes", "Git/GitHub","Kafka",
   "TensorFlow", "PyTorch", "Pandas", "NumPy",
@@ -69,12 +69,12 @@ const projects = [
 ];
 
 const certificates = [
-  { name: "AWS Cloud Essentials", url: "https://www.credly.com/badges/a16e21c7-a79a-4369-8740-a9057c9fd43d/linked_in_profile" },
   { name: "Google Cloud CyberSecurity Certificate", url: "https://www.credly.com/badges/08077681-ff00-4ecf-a0ad-0318f7c371ad/linked_in_profile" },
-  {name:"Introduction to Containers w/ Docker, Kubernetes & OpenShift",url:"https://www.coursera.org/account/accomplishments/verify/H7ZO5QMABBS4"},
-  {name:"Cisco: Introduction to Cybersecurity",url:"https://www.credly.com/badges/e877100d-cf9f-47b2-86d4-d31c4469d34d/linked_in_profile"},
-  {name:"Google Cloud Computing Foundations Certificate",url:"https://www.credly.com/badges/fdf08908-e8a7-4c03-ad69-930dacb93eb8/linked_in_profile"},
+  {name:"IBM: Introduction to Containers w/ Docker, Kubernetes & OpenShift",url:"https://www.coursera.org/account/accomplishments/verify/H7ZO5QMABBS4"},
   {name:"Oracle Cloud Infrastructure 2025 Certified Foundations Associate",url:"https://catalog-education.oracle.com/ords/certview/sharebadge?id=FCE6C1341DBA5FC7EE0D493CEAFC0FED530C79867E2821965A9C2CAD577A4B37"},
+  {name:"Google Cloud Computing Foundations Certificate",url:"https://www.credly.com/badges/fdf08908-e8a7-4c03-ad69-930dacb93eb8/linked_in_profile"},
+  {name: "AWS Cloud Essentials", url: "https://www.credly.com/badges/a16e21c7-a79a-4369-8740-a9057c9fd43d/linked_in_profile" },
+  {name:"Cisco: Introduction to Cybersecurity",url:"https://www.credly.com/badges/e877100d-cf9f-47b2-86d4-d31c4469d34d/linked_in_profile"},
   {name:"Introduction to FinOps",url:"https://verify.skilljar.com/c/zpspjuxaoqmc"},
 ];
 
@@ -134,7 +134,31 @@ const courses = [
     }
   };
 
-  const bgClass = darkMode ? 'bg-gray-900' : 'bg-gray-50';
+  const achievements = [
+  { 
+    title: "Department Ranking 1st in B.Tech CSE", 
+    description: "Achieved 1st rank among 100+ students in the Computer Science department at IIT Jodhpur for top academic performance with a CGPA of 9.69."
+  },
+  { 
+    title: "10 SGPA in Second Semester", 
+    description: "Secured a perfect 10 SGPA in the second semester at IIT Jodhpur, demonstrating exceptional understanding and mastery of coursework."
+  },
+  { 
+    title: "Grade A in all Core CSE Courses", 
+    description: "Consistently earned Grade A in all core Computer Science courses including Data Structures, Algorithms, Operating Systems, and Database Management Systems."
+  },
+  { 
+    title: "JEE Advanced 2023 - All India Rank 3113", 
+    description: "Secured an impressive All India Rank of 3113 in the highly competitive JEE Advanced 2023 examination, leading to admission at IIT Jodhpur."
+  },
+  { 
+    title: "JEE Mains 2023 - All India Rank 3022", 
+    description: "Secured an impressive All India Rank of 3022 in the highly competitive JEE Mains 2023 examination."
+  }
+];
+
+
+  const bgClass = darkMode ? 'bg-gray-900' : 'bg-gray-100';
   const textClass = darkMode ? 'text-gray-100' : 'text-gray-900';
   const cardClass = darkMode ? 'bg-gray-800' : 'bg-white';
   const hoverClass = darkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-100';
@@ -167,12 +191,13 @@ const courses = [
             </div>
                 <div className="flex gap-2 sm:gap-3 w-full sm:w-auto">
               <a
-                href={personalInfo.linkedin}
+                // href={personalInfo.linkedin}
+                href="/resume_krish_teckchandani.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 sm:flex-none px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold text-sm sm:text-base text-center"
               >
-                Hire Me
+                PDF ↓
               </a>
               <button
                 onClick={() => setDarkMode(!darkMode)}
@@ -245,60 +270,6 @@ const courses = [
             ))}
           </div>
         </section>
-
-        {/* Certificates Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">Certifications</h2>
-          <div className="space-y-3">
-            {certificates.map((cert, idx) => (
-              <a
-                key={idx}
-                href={cert.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`block p-4 ${cardClass} rounded-lg ${hoverClass} transition-colors`}
-              >
-                <div className="flex items-center justify-between">
-                  <span className="text-lg">{cert.name}</span>
-                  <ExternalLink size={18} />
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        {/* Positions of Responsibility */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">Positions of Responsibility</h2>
-          <div className="space-y-3">
-            {positions.map((pos, idx) => (
-              <div key={idx} className={`p-4 ${cardClass} rounded-lg`}>
-                <div className="flex justify-between items-center">
-                  <span className="text-lg font-semibold">{pos.title}</span>
-                  <span className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                    {pos.period}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Important Courses */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">Important Courses Taken</h2>
-          <div className="flex flex-wrap gap-3">
-            {courses.map((course, idx) => (
-              <div
-                key={idx}
-                className={`px-6 py-3 rounded-full ${cardClass} ${hoverClass} transition-all duration-300 cursor-pointer hover:scale-105 hover:shadow-lg`}
-              >
-                {course}
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* Education Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-6">Education</h2>
@@ -358,6 +329,80 @@ const courses = [
             )}
           </div>
         </section>
+
+        {/* Important Courses */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Important Courses Taken</h2>
+          <div className="flex flex-wrap gap-3">
+            {courses.map((course, idx) => (
+              <div
+                key={idx}
+                className={`px-6 py-3 rounded-full ${cardClass} ${hoverClass} transition-all duration-300 cursor-pointer hover:scale-105 hover:shadow-lg`}
+              >
+                {course}
+              </div>
+            ))}
+          </div>
+        </section>
+        {/* Certificates Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Certifications</h2>
+          <div className="space-y-3">
+            {certificates.map((cert, idx) => (
+              <a
+                key={idx}
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block p-4 ${cardClass} rounded-lg ${hoverClass} transition-colors`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-lg">{cert.name}</span>
+                  <ExternalLink size={18} />
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* Positions of Responsibility */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Positions of Responsibility</h2>
+          <div className="space-y-3">
+            {positions.map((pos, idx) => (
+              <div key={idx} className={`p-4 ${cardClass} rounded-lg`}>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-semibold">{pos.title}</span>
+                  <span className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                    {pos.period}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+
+
+        {/* Achievements Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Achievements</h2>
+          <div className="space-y-4">
+            {achievements.map((achievement, idx) => (
+              <div
+                key={idx}
+                className={`p-5 ${cardClass} rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300`}
+              >
+                <h3 className="text-xl font-semibold mb-2">{achievement.title}</h3>
+                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'} leading-relaxed`}>
+                  {achievement.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+
       </main>
 
       {/* Footer */}
