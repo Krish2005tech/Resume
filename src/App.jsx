@@ -145,7 +145,7 @@ const courses = [
   },
   { 
     title: "Grade A in all Core CSE Courses", 
-    description: "Consistently earned Grade A in all core Computer Science courses including Data Structures, Algorithms, Operating Systems, and Database Management Systems."
+    description: "Consistently earned Grade A in all core Computer Science courses including Data Structures and Algorithms, Operating Systems, and Database Management Systems."
   },
   { 
     title: "JEE Advanced 2023 - All India Rank 3113", 
