@@ -69,7 +69,8 @@ const projects = [
 ];
 
 const certificates = [
-  { name: "Google Cloud CyberSecurity Certificate", url: "https://www.credly.com/badges/08077681-ff00-4ecf-a0ad-0318f7c371ad/linked_in_profile" },
+  {name: "Google Cloud CyberSecurity Certificate", url: "https://www.credly.com/badges/08077681-ff00-4ecf-a0ad-0318f7c371ad/linked_in_profile" },
+  {name: "NVIDIA: Building RAG Agents with LLMs", url: "https://learn.nvidia.com/certificates?id=ArNVPNI4SaiTHmCQQ60Y4A#" },
   {name:"IBM: Introduction to Containers w/ Docker, Kubernetes & OpenShift",url:"https://www.coursera.org/account/accomplishments/verify/H7ZO5QMABBS4"},
   {name:"Oracle Cloud Infrastructure 2025 Certified Foundations Associate",url:"https://catalog-education.oracle.com/ords/certview/sharebadge?id=FCE6C1341DBA5FC7EE0D493CEAFC0FED530C79867E2821965A9C2CAD577A4B37"},
   {name:"Google Cloud Computing Foundations Certificate",url:"https://www.credly.com/badges/fdf08908-e8a7-4c03-ad69-930dacb93eb8/linked_in_profile"},
