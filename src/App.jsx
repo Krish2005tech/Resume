@@ -112,17 +112,17 @@ const courses = [
     college: {
       name: "IIT Jodhpur",
       degree: "B.Tech Computer Science",
-      cgpa: "9.69",
+      cgpa: "9.68",
       year: "2023-Present",
      subjects : [
   { name: "Data Structures and Algorithms", grade: "A" },
   { name: "Software Engineering", grade: "A-" },
-  // { name: "Computer Networks", grade: "A" },
+  { name: "Computer Networks", grade: "A" },
   { name: "Operating Systems", grade: "A" },
   { name: "Database Management Systems", grade: "A" },
-  // { name: "Deep Learning", grade: "A" },
-  // { name: "Cyber Security", grade: "A" },
-  // { name: "Computer Vision", grade: "A" },
+  { name: "Deep Learning", grade: "A-" },
+  { name: "Cyber Security", grade: "A" },
+  { name: "Computer Vision", grade: "A" },
   { name: "Computer Architecture", grade: "A" },
   { name: "Design and Analysis of Algorithms", grade: "A" },
   { name: "Principles of Programming Languages", grade: "B" },
@@ -130,6 +130,7 @@ const courses = [
   { name: "Probability, Statistics and Stochastic Processes", grade: "A" },
   { name: "Introduction to Computer Science", grade: "A" },
   { name: "Linear Algebra", grade: "A" },
+  { name: "Graph Theory & applications", grade: "A-" },
   { name: "Multivariable Calculus", grade: "A" }
 ]
     }
