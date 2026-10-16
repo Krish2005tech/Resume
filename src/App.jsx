@@ -17,12 +17,25 @@ export default function Portfolio() {
    about: "Software developer with strong foundations in computer science and hands-on experience in building secure, scalable systems. Skilled across full-stack development, machine learning pipelines, and cloud-native engineering. Passionate about solving complex problems, optimizing performance, and applying software engineering best practices."
   };
 
- const skills = [
-  "C/C++", "Python", "JavaScript", "Golang", "SQL",
-  "React", "Node.js", "Flask", "FastAPI", "Django",
-  "MongoDB", "Redis", "Docker", "Kubernetes", "Git/GitHub","Kafka",
-  "TensorFlow", "PyTorch", "Pandas", "NumPy",
-  "AWS", "Google Cloud Platform", "Linux", "Computer Vision","Postman"
+//  const skills = [
+//   "C/C++", "Python", "JavaScript", "Golang", "SQL",
+//   "React", "Node.js", "Flask", "FastAPI", "Django",
+//   "MongoDB", "Redis", "Docker", "Kubernetes", "Git/GitHub","Kafka",
+//   "TensorFlow", "PyTorch", "Pandas", "NumPy",
+//   "AWS", "Google Cloud Platform", "Linux", "Computer Vision","Postman"
+// ];
+const skills = [
+  // Languages
+  "C/C++", "Python", "JavaScript", "TypeScript", "Golang", "Java", "Kotlin", "Swift", "SQL",
+  // Frameworks & Web
+  "React", "Next.js", "React Native", "Jetpack Compose", "Node.js",
+  "Flask", "FastAPI", "Django", "MongoDB", "Redis", "Kafka",
+  // Systems & Tools
+  "Linux", "Bazel", "Git/GitHub", "Docker", "Kubernetes", "Postman", "WebRTC", "REST APIs",
+  // Cloud
+  "AWS", "Google Cloud Platform",
+  // ML / CV
+  "TensorFlow", "PyTorch", "Pandas", "NumPy", "OpenCV", "Computer Vision",
 ];
 
 const projects = [
@@ -90,17 +103,18 @@ const positions = [
 
 const courses = [
   "Data Structures and Algorithms",
+  "Design and Analysis of Algorithms",
   "Software Engineering",
   "Computer Networks",
   "Operating Systems",
   "Database Management Systems",
+  "Artificial Intelligence",
   "Deep Learning",
-  "Cyber Security",
   "Computer Vision",
-  "Computer Architecture",
-  "Design and Analysis of Algorithms",
-  "Principles of Programming Languages",
   "Pattern Recognition and Machine Learning",
+  "Cyber Security",
+  "Computer Architecture",
+  "Principles of Programming Languages",
   "Probability, Statistics and Stochastic Processes",
   "Introduction to Computer Science",
   "Linear Algebra",
